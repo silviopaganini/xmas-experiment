@@ -1,0 +1,151 @@
+@import 'nib'
+
+global-reset()
+
+/*
+sprites vars
+_CDN = "{{CDN_URL}}"
+FOLDER_PATH = _CDN + 'img/ss/'
+*/
+
+_CDN = "{{CDN_URL}}"
+
+/* GLOBALS */
+
+::-moz-selection
+    background transparent
+    text-shadow none
+::selection
+    background transparent
+    text-shadow none
+html
+    overflow hidden
+    font-family Chewy
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+    margin 0
+    padding 0
+    size 100% 100%
+    -webkit-font-smoothing: antialiased
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
+
+body
+    user-select(none)
+    margin 0
+    padding 0
+    size 100% 100%
+    background-color #FFF
+    overflow hidden
+    font-smoothing(antialiased)
+
+.gif-viz
+    position: absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-position(cover)
+
+#grito
+    position absolute
+    top 0
+    left 0
+
+.circles
+    top 0
+    left 0 
+    display none
+    position: absolute
+
+    > div 
+        top 0
+        left 0 
+        position: absolute
+        border-radius 100%
+        background-color black
+
+.circle1
+    transform : scale(1)
+
+.circle0
+    transform : scale(0)
+
+.animateCircle
+    transition-duration: .8s
+    transition-property: all
+    transition-timing-function: ease-out
+
+.canvasContainer
+    top 0
+    left 0 
+    position: absolute
+    display: none
+
+.sketch
+    top 0
+    left 0 
+    position: absolute
+    -webkit-filter: blur(10px)
+
+#bye
+    position         : absolute
+    background-color : lightslategrey
+    top              : 0
+    left             : 0
+    display          : table
+    width            : 100%
+    height           : 100%
+    text-align       : center
+
+    > div.particles
+        position: absolute
+        top 0
+        left 0
+        pointer-events : none
+
+    > div.container
+        display    : table
+        width      : 100%
+        height     : 100%
+        text-align : center
+
+        >div
+            display table-cell
+            vertical-align middle
+
+            > h1
+                font-size 8rem
+                text-transform: uppercase
+                margin 20px
+
+            > button
+                font-family Chewy
+                font-size 3rem
+                cursor: pointer
+                border-radius(10px)
+                background-color: red
+                border: 0
+                color: white
+                padding 15px
+                transition-duration: .3s
+                transition-property: padding
+                transition-timing-function: ease-out
+
+                &:hover
+                    padding 30px
+
+            > h3 
+                margin 20px 
+                font-size 2rem
+
+                > a
+                    text-decoration none
+                    color #333
+
+                    &:hover
+                        background-color #000
+                        color white
+
+svg 
+    #mou
+        -webkit-transform-origin 251px 62px
